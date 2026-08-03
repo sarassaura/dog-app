@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>{{dogFullName}}</h1>
+    
+    <div class="dog-details">
+        <div class="dog-image">
+            <mat-spinner></mat-spinner>
+            <img src={{dogImage()}} alt={{dogFullName}}>
+        </div>
+        @if (dogSubBreeds().length > 0) {
+            <div class="dog-sub-breeds">
+                <h2>Sub Raças</h2>
+                <div class="list">
+                    @for (subBreed of dogSubBreeds(); track $index) {
+                        <a [routerLink]="['/raca', dogBreed, subBreed]">{{subBreed}}</a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,66 @@
+.container {
+    padding: 16px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.dog-details {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    .dog-image {
+        width: 50%;
+        position: relative;
+    
+        img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-width: 50em;
+            max-height: 50em;
+            height: auto;
+            min-width: 30em;
+            min-height: 30em;
+            object-fit: contain;
+            object-position: left top;
+        }
+    
+        mat-spinner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30em !important;
+            height: 30em !important;
+            --mat-progress-spinner-size: 10em!important;
+            --mat-progress-spinner-active-indicator-color: palevioletred;
+        }
+    }
+
+    .dog-sub-breeds {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: blueviolet;
+                font-size: large;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: hotpink;
+                }
+            }
+        }
+    }
+}
+
+

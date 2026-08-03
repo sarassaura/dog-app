@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+    display: flex;
+    background-color: rgb(231, 213, 243);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+app-root > *:not(router-outlet) {
+    height: 100%;
+    width: 100%;
+}

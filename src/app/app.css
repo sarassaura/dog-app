@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.title {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  height: 80px;
+  min-height: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  padding: auto;
+}
+
+.mat-icon {
+  transform: scale(1.5);
+}
+
+h1 {
+    color: deeppink;
+}
